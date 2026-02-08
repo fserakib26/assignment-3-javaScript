@@ -3,8 +3,8 @@ function newPrice(currentPrice , discount ) {
     if (typeof currentPrice !== 'number' || typeof discount !== 'number' || discount < 0 || discount > 100 ) {
         return 'Invalid';
     } else {
-        let discontAmount = currentPrice * discount / 100;
-        let totalAfterDiscount = currentPrice - discontAmount;
+        let discountAmount = currentPrice * discount / 100;
+        let totalAfterDiscount = currentPrice - discountAmount;
         return totalAfterDiscount.toFixed(3);
     }
 }

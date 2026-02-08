@@ -20,9 +20,9 @@ function gonoVote(array) {
         if (haCount === naCount) {
            return 'equal';
         } else if (haCount > naCount){
-            return 'true';
+            return true;
         } else if(haCount < naCount){
-            return 'false';
+            return false;
         }
             
 
